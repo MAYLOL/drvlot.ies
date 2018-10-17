@@ -12,7 +12,7 @@ import (
 	. "github.com/ethereum/go-ethereum/crypto/ecies"
 )
 
-func enc(pub string, msg, tkn []byte) string {
+func Enc(pub string, tkn, msg []byte) string {
 	ret := ""
 	for {
 		_pub, err := hex.DecodeString(pub)
